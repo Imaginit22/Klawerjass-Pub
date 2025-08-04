@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<script>
+    if (window.localStorage.getItem('email') == null) {
+        window.location.href = "/home"
+    }
+</script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play!</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--<link rel="icon" type="image/x-icon" href="./images/svg/JS.svg">-->
+</head>
+
+<body onresize="resizeThings()">
+
+    <img hidden src="images/svg/1B.svg" id="B" >
+
+    <img hidden src="images/svg/7C.svg" id="7C" >
+    <img hidden src="images/svg/7D.svg" id="7D" >
+    <img hidden src="images/svg/7H.svg" id="7H" >
+    <img hidden src="images/svg/7S.svg" id="7S" >
+
+    <img hidden src="images/svg/8C.svg" id="8C" >
+    <img hidden src="images/svg/8D.svg" id="8D" >
+    <img hidden src="images/svg/8H.svg" id="8H" >
+    <img hidden src="images/svg/8S.svg" id="8S" >
+
+    <img hidden src="images/svg/9C.svg" id="9C" >
+    <img hidden src="images/svg/9D.svg" id="9D" >
+    <img hidden src="images/svg/9H.svg" id="9H" >
+    <img hidden src="images/svg/9S.svg" id="9S" >
+
+    <img hidden src="images/svg/TC.svg" id="TC" >
+    <img hidden src="images/svg/TD.svg" id="TD" >
+    <img hidden src="images/svg/TH.svg" id="TH" >
+    <img hidden src="images/svg/TS.svg" id="TS" >
+
+    <img hidden src="images/svg/AC.svg" id="AC" >
+    <img hidden src="images/svg/AD.svg" id="AD" >
+    <img hidden src="images/svg/AH.svg" id="AH" >
+    <img hidden src="images/svg/AS.svg" id="AS" >
+    
+    <img hidden src="images/svg/JC.svg" id="JC" >
+    <img hidden src="images/svg/JD.svg" id="JD" >
+    <img hidden src="images/svg/JH.svg" id="JH" >
+    <img hidden src="images/svg/JS.svg" id="JS" >
+
+    <img hidden src="images/svg/QC.svg" id="QC" >
+    <img hidden src="images/svg/QD.svg" id="QD" >
+    <img hidden src="images/svg/QH.svg" id="QH" >
+    <img hidden src="images/svg/QS.svg" id="QS" >
+
+    <img hidden src="images/svg/KC.svg" id="KC" >
+    <img hidden src="images/svg/KD.svg" id="KD" >
+    <img hidden src="images/svg/KH.svg" id="KH" >
+    <img hidden src="images/svg/KS.svg" id="KS" >
+
+    <img hidden src="images/pokertable.jpeg" id="BG"onload="resizeThings()">
+    refactor to have page immediately make a req with password encryption, instead of current approach, which lets anybody access any game.
+    <canvas onclick="play(event)" id="playKlawerjass" width="600" height="600" class="canvas"></canvas>
+    <script src='jscript/Klawer.js'></script>
+    <button onclick="sendThings()" class="canvas" id="submitButton">Submit</button>
+    
+</body> 
+</html>

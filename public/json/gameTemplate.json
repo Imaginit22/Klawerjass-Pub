@@ -1,0 +1,16 @@
+{
+    "hands": {
+        "hand1": [null, null, null, null, null, null, null, null, null, null],
+        "hand2": [null, null, null, null, null, null, null, null, null, null]
+    },
+    "trumpDecider": "card",
+    "winpiles": {
+        "winpile1": 0,
+        "winpile2": 0
+    },
+    "current1": "card",
+    "current2": "card",
+    "first1": true,
+    "dealPhase": 0,
+    "trumps": "suit"
+}

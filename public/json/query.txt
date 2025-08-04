@@ -1,0 +1,31 @@
+UPDATE games 
+SET gamedata = '{"hand1":["AS","8S","TH","QD","9D","7D"],"reserve1":["8H","9S","9C"],"hand2":["AC","KC","QC","7C","TD","8D"],"reserve2":["TS","QH","JC"],"player1GoesFirst":null,"dealPhase":0,"trumpDecider":"TC"}',
+gamephase = 1,
+p1pts = 0,
+p2pts = 0
+WHERE gameid = 1
+
+
+UPDATE games 
+SET gamedata = '{"hand1":["8S","9D","7D"],"hand2":["QH","8D"],"player1GoesFirst":null,"dealPhase":0,"trumpDecider":"TC","trump":"C","trick":6,"p1Turn":true,"p1tricks":38,"p2tricks":66,"h2Runs":[4,5],"canFollow":2,"played":"KC"}',
+gamephase = 2,
+p1pts = 0,
+p2pts = 0
+WHERE gameid = 1
+
+UPDATE games 
+SET gamedata = '{"hand1":["8S","9D","7D"],"hand2":["QH","8D"],"player1GoesFirst":null,"dealPhase":0,"trumpDecider":"TC","trump":"C","trick":6,"p1Turn":true,"p1tricks":490,"p2tricks":66,"h2Runs":[4,5],"canFollow":2,"played":"KC"}',
+gamephase = 2,
+p1pts = 0,
+p2pts = 0
+WHERE gameid = 1
+
+
+UPDATE games 
+SET gamedata = '{"hand1":["7D"],"hand2":[],"player1GoesFirst":null,"dealPhase":0,"trumpDecider":"TC","trump":"C","trick":8,"p1Turn":true,"p1tricks":490,"p2tricks":83,"h2Runs":[4,5],"canFollow":0,"played":"8D"}',
+gamephase = 2,
+p1pts = 0,
+p2pts = 0
+WHERE gameid = 1
+
+                refactor to have page immediately make a req with password encryption, instead of current approach, which lets anybody access any game.
